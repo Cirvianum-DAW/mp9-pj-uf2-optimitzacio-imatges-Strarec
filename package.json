@@ -1,0 +1,39 @@
+{
+  "name": "tailwind-parcel-project",
+  "version": "1.0.0",
+  "description": "Projecte que utilitza Tailwind CSS i Parcel",
+  
+  "scripts": {
+    "dev": "parcel src/index.html && parcel src/index.html --open",
+    "build": "parcel build src/index.html",
+    "watch": "tailwindcss -i ./src/index.css -o ./dist/output.css --watch",
+    "optimize-images": "npx imagemin img/* --out-dir=dist/images --plugin=mozjpeg --plugin=pngquant --plugin=webp"
+  },
+  "keywords": [
+    "tailwind",
+    "parcel",
+    "css",
+    "html",
+    "javascript"
+  ],
+  "author": "El teu nom",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-postcss": "^2.10.0",
+    "autoprefixer": "^10.4.16",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^8.0.0",
+    "postcss": "^8.4.31",
+    "postcss-import": "^15.1.0",
+    "prettier": "3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.6",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-nightly.1404"
+  }
+}
